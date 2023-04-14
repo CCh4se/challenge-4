@@ -6,6 +6,11 @@ var countEl = document.querySelector("#seconds");
 var scoreEl = document.querySelector("#score");
 var userNameSpan = document.querySelector("#user-name");
 var userScoreSpan = document.querySelector("#user-score");
+var question = document.querySelector("#question");
+var answer = document.querySelector("#answer");
+var choices = document.querySelector("#choices");
+
+
 
 function clock() {
     var timeLeft = 60;
@@ -61,19 +66,35 @@ function grade() {
     })
 }
 
+const question = "What does <p> stand for in html?";
+const choices = ["Parentheses","Paragraph","Heading","Body"];
 
-function leaderBoard() {
+const answer = prompt(question + "/n/n" + choices.join("/n"));
 
+if (answer.toLowerCase() === "paragraph") {
+    prompt("Correct");
+} else {
+    prompt("Wrong, the correct answer is paragraph");
 }
 
-function renderLastRegistered() {
-    var name = localStorage.getItem("name");
-    var scoring = localStorage.getItem("display-score");
+const question = "How do you use a hyperlink in html?";
+const choices = ["a href", "p", "h1", "div"];
 
-    if (!name || !scoring) {
-        return;
-    }
+const answer = prompt(question + "/n/n" + choices.join("/n")); 
 
-    userNameSpan.textContent = name;
-    userScoreSpan.textContent = scoring;
+if (answer.toLowerCase() === "a href") {
+    prompt("Correct");
+} else {
+    prompt("Wrong, the correct answer is a href");
+}
+
+const question = "What program do we use in class to code?";
+const choices = ["git bash", "command console", "google", "vscode"];
+
+const answer = prompt(question + "/n/n" + choices.join("/n")); 
+
+if (answer.toLowerCase() === "vscode") {
+    prompt("Correct");
+} else {
+    prompt("Wrong, the correct answer is vscode");
 }
