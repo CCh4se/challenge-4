@@ -2,6 +2,9 @@
 
 ## Coding Quiz 
 
+![image](https://user-images.githubusercontent.com/127711552/235052514-f09e4e42-c2fb-4e26-a531-ec953ff619a7.png)
+
+
 
 # Description
 For this project we were tasked with taking what we learned in class about web api and javascript and apply it into making a multiple choice quiz. This was done by having a timer and a score being recorded at the end of the quiz. Then allowing the quiz to be saved in the local storage and displayed as a leaderboard for all the attempts. For myself I didn't get close to how I would have like to submit as an assignment, but I plan on resubmitting and making it a polished website. 
